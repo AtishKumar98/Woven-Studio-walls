@@ -1,5 +1,8 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+layout: aboutus.html
+title: "About-Us"
+permalink: /aboutus/
 
 on:
   # Runs on pushes targeting the default branch
