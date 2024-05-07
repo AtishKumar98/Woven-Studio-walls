@@ -1,5 +1,19 @@
 RewriteEngine On
 # Remove .html
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{aboutus} !-d
+RewriteCond %{aboutus}.html -f
+# RewriteRule ^([^\aboutus.html.]+)$ $aboutus.html [NC,L]
+# # RewriteRule ^aboutus.html$ /aboutus/ [R=301,L]
+#RewriteEngine On
+
+RewriteEngine On
+RewriteRule ^Woven-Studio-walls/aboutus/$ Woven-Studio-walls/aboutus/index.html [L]
+
+#DirectoryIndex index.html
+#DirectoryIndex aboutus.html
+
+# <IfModule mod_rewrite.c>
+
+#   RewriteEngine On
+#   RewriteRule ^Woven-Studio-walls/aboutus/?$ /Woven-Studio-walls/aboutus.html [R=301,L]
+# </IfModule>
