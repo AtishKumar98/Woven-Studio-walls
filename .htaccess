@@ -1,19 +1,9 @@
+# Enable mod_rewrite
 RewriteEngine On
-# Remove .html
-RewriteCond %{aboutus} !-d
-RewriteCond %{aboutus}.html -f
-# RewriteRule ^([^\aboutus.html.]+)$ $aboutus.html [NC,L]
-# # RewriteRule ^aboutus.html$ /aboutus/ [R=301,L]
-#RewriteEngine On
 
-RewriteEngine On
-RewriteRule ^Woven-Studio-walls/aboutus/$ Woven-Studio-walls/aboutus/index.html [L]
+# If the request is not for a directory or existing file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 
-#DirectoryIndex index.html
-#DirectoryIndex aboutus.html
-
-# <IfModule mod_rewrite.c>
-
-#   RewriteEngine On
-#   RewriteRule ^Woven-Studio-walls/aboutus/?$ /Woven-Studio-walls/aboutus.html [R=301,L]
-# </IfModule>
+# Rewrite URLs without file extensions to corresponding HTML files
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
