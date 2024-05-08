@@ -1,0 +1,7 @@
+.para-content{
+   width: 100%;  margin: 2%;
+}
+
+.dalle-image{
+    width: 50%;display: flex;flex-direction: row;justify-content: flex-end;align-items: center; 
+}
