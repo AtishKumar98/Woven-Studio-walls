@@ -1,9 +1,0 @@
-<!-- # Enable mod_rewrite
-RewriteEngine On
-
-# If the request is not for a directory or existing file
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-
-# Rewrite URLs without file extensions to corresponding HTML files
-RewriteRule ^([^\.]+)$ $1.html [NC, L] -->
