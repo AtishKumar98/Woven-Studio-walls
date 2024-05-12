@@ -144,12 +144,12 @@ footer{
   #Banner-section{
     height: 80vh;
     width: 100%;
-    background: url('./images/banner.jpeg');
+    /* background: url('./images/banner.jpeg'); */
     backdrop-filter: blur(125px); /* Adjust the blur intensity as needed */
     object-fit: contain;
     background-position: center;
     aspect-ratio: 12/9;
-
+   
   }
 
 
@@ -161,11 +161,14 @@ footer{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image */
+  background: url('./images/banner.jpeg');
+  /* background-image: url('./images/banner.jpeg'); Replace 'background.jpg' with your actual background image */
   background-size: cover;
-  background-position: center;z-index: -1; /* Ensure the background is behind other content */
-  opacity: 0.9; /* Adjust the opacity as needed */
-  backdrop-filter: blur(20px); /* Adjust the blur intensity as needed */
+  background-position: center;
+  z-index: -1; /* Ensure the background is behind other content */
+  opacity: 0.6; /* Adjust the opacity as needed */
+  /* backdrop-filter: blur(500px);  */
+  filter: blur(10px);
 }
   .Textual{
     display: flex;
@@ -499,23 +502,8 @@ footer{
         </h1>
         <h1 class="typing-text" data-texts='["TUFTED ARTISTRIES", "KNOTTED LUXURIES", "WALL WORK","WALL ART"]'> </h1>
       </div>
-        <!-- <img src="./images/banner.jpeg" alt="" class="w-100 fadeInLeft"style="height:80vh;aspect-ratio:3/6;object-fit:cover"> -->
-             <!-- <div class="container mt-5 mx-auto w-100 banner-panel">
-                 <div class="row">
-                     <div class="d-flex justify-content-center">
-                         <div class="image-container w-100 d-flex justify-content-center">
-                             <img src="https://images.pexels.com/photos/22858523/pexels-photo-22858523/free-photo-of-s-curve-chicago.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
-                             <img src="https://images.pexels.com/photos/17585278/pexels-photo-17585278/free-photo-of-sandbank-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
-                             <img src="https://images.pexels.com/photos/22741673/pexels-photo-22741673/free-photo-of-self.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
-                             <img src="https://images.pexels.com/photos/23196871/pexels-photo-23196871/free-photo-of-cafe.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
-                             <img src="https://images.pexels.com/photos/19501709/pexels-photo-19501709/free-photo-of-black-and-white-shot-of-a-young-woman-standing-outside-in-the-dark-and-looking-away.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="img-fluid">
-                         </div>
-                     </div>
-                 </div>
-             </div> -->
-             <div class="container">
-     
-             </div>
+  
+            
             
            
              
@@ -707,7 +695,7 @@ footer{
           </div>
       </div>
     </section> -->
-<section id="customization">
+<section id="customization" class="container">
     <div class="about-us-section container fadeInLeft">
     <div class="about-us-header mt-5 mb-5">
         Customizations
@@ -839,23 +827,23 @@ we've got you covered with extremely quirky designs, colours and much more.
 
 <!-- Initialize Swiper -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20
-          }
-        }
-      });
-    });
+  // document.addEventListener('DOMContentLoaded', function () {
+  //     var swiper = new Swiper(".mySwiper", {
+  //       slidesPerView: 1,
+  //       spaceBetween: 30,
+  //       pagination: {
+  //         el: ".swiper-pagination",
+  //         clickable: true,
+  //       },
+  //       breakpoints: {
+  //         // when window width is <= 640px
+  //         640: {
+  //           slidesPerView: 3,
+  //           spaceBetween: 20
+  //         }
+  //       }
+  //     });
+  //   });
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -900,7 +888,7 @@ we've got you covered with extremely quirky designs, colours and much more.
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('section'); // Make sure elements have 'section' class
+    const sections = document.querySelectorAll('.container'); // Make sure elements have 'section' class
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
