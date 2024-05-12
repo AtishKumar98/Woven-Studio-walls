@@ -17,6 +17,7 @@
     <title>Studio Woven Walls</title>
   </head>
   <style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -138,8 +139,55 @@ footer{
     margin-left: -3%;
   }
   #Banner-section{
-    height: 100vh;
+    height: 80vh;
+    width: 100%;
+    background: url('./images/banner.jpeg');
+    backdrop-filter: blur(125px); /* Adjust the blur intensity as needed */
+    object-fit: contain;
+    background-position: center;
+    aspect-ratio: 12/9;
+
   }
+
+
+
+  #Banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image */
+  background-size: cover;
+  background-position: center;z-index: -1; /* Ensure the background is behind other content */
+  opacity: 0.7; /* Adjust the opacity as needed */
+  backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+}
+  .Textual{
+    display: flex;
+    height: 80vh;
+    margin-left: 2%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .create, .awesome {
+    color: #fff ;
+  font-size: 5rem !important;
+  } 
+  .typing-text {
+      color: #fff;
+      min-height: 200px; /* Adjust based on longest text */
+      display: inline-block;
+      /* float: left; */
+      font-size: 10rem;
+      font-family: "Bebas Neue", sans-serif;
+  overflow: hidden; /* Ensures the animation doesn't overflow */
+  white-space: nowrap; /* Prevents text from wrapping */
+  border-right: 2px solid #94BBCC; 
+}
 
 
   .footer_logo{
@@ -294,6 +342,40 @@ footer{
 
     
     @media (max-width: 768px) {
+      .Textual{
+    display: flex;
+    height: auto;
+    margin-left: 2%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .create, .awesome {
+    color: #fff ;
+  font-size: 2rem !important;
+  } 
+  .typing-text {
+      color: #fff;
+      min-height: 20px; /* Adjust based on longest text */
+      display: inline-block;
+      /* float: left; */
+      font-size: 3rem;
+      font-family: "Bebas Neue", sans-serif;
+  overflow: hidden; /* Ensures the animation doesn't overflow */
+  white-space: nowrap; /* Prevents text from wrapping */
+  border-right: 2px solid #94BBCC; 
+}
+      #Banner-section{
+    height: auto;
+    width: 100%;
+    background: url('./images/banner.jpeg');
+    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
+    object-fit: contain;
+    background-position: center;
+    aspect-ratio: 12/9;
+
+  }
   .contact-info li{
     margin-left: -3%;
   }
@@ -390,7 +472,10 @@ footer{
     font-size: 1rem;
     text-align: left;
   }
+ 
+
   }
+
   @media only screen   
   and (min-width: 1030px)   
   and (max-width: 1366px) 
@@ -402,8 +487,16 @@ footer{
   </style>
   <body>
 
-    <section id="Banner-section mb-5 mt-5 fadeInLeft">
-        <img src="./images/banner.jpeg" alt="" class="w-100 fadeInLeft"style="height:80vh;aspect-ratio:3/6;object-fit:cover">
+    <section id="Banner-section" class="fadeInLeft">
+      
+      <div class="Textual">
+        <h2 class="create">We Create</h2>
+        <h1 class="awesome mb-5">
+          Awesome
+        </h1>
+        <h1 class="typing-text" data-texts='["TUFTED ARTISTRIES", "KNOTTED LUXURIES", "WALL WORK"]'> </h1>
+      </div>
+        <!-- <img src="./images/banner.jpeg" alt="" class="w-100 fadeInLeft"style="height:80vh;aspect-ratio:3/6;object-fit:cover"> -->
              <!-- <div class="container mt-5 mx-auto w-100 banner-panel">
                  <div class="row">
                      <div class="d-flex justify-content-center">
@@ -760,6 +853,47 @@ we've got you covered with extremely quirky designs, colours and much more.
         }
       });
     });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const typingTextElement = document.querySelector('.typing-text');
+  const texts = JSON.parse(typingTextElement.getAttribute('data-texts'));
+  let index = 0;
+  let textIndex = 0;
+  let text = texts[textIndex];
+
+  function type() {
+    if (index < text.length) {
+      typingTextElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+    } else {
+      // Call the callback function once typing is complete
+      typingComplete();
+    }
+  }
+
+  function typingComplete() {
+    // Add your code to execute after typing is complete
+    setTimeout(erase, 1000); // Delay before erasing
+  }
+
+  function erase() {
+    if (index > 0) {
+      typingTextElement.textContent = text.substring(0, index - 1);
+      index--;
+      setTimeout(erase, 50); // Adjust erasing speed here (in milliseconds)
+    } else {
+      textIndex++;
+      if (textIndex >= texts.length) textIndex = 0;
+      text = texts[textIndex];
+      setTimeout(type, 1000); // Delay before typing the next text
+    }
+  }
+
+  type();
+});
+
 </script>
 </html>
 
