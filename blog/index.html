@@ -1,27 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="icon" href="../images/sww-logo.jpeg">
-    <title>Studio Woven Walls</title>
-  </head>
-  <style>
 
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="./images/sww-logo.jpeg">
+
+    <!-- <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+    <title>Studio Woven Walls</title>
+</head>
+<style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
-    body{
+    section {
+        opacity: 0;
+        /* Initially hidden */
+        transition: opacity 0.3s ease-in-out;
+        /* Smooth transition for opacity change */
+    }
+
+    body {
         font-family: "Poppins", sans-serif;
         /* font-family: "Bebas Neue", sans-serif; */
         font-size: 1rem;
@@ -29,47 +36,59 @@
     }
 
     @keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
 
-.fadeInLeft {
-  animation-name: fadeInLeft;
-  animation-duration: 1.2s;
-  animation-fill-mode: both; /* Keeps the element at the end state of the animation */
-}
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
-.animate { /* This class gets added via JavaScript */
-  animation: fadeInLeft 1s forwards; /* 'forwards' keeps the element in the final state post-animation */
-}
-    .navbar-expand-lg .navbar-nav .nav-link{
+    .fadeInLeft {
+        animation-name: fadeInLeft;
+        animation-duration: 1.2s;
+        animation-fill-mode: both;
+        /* Keeps the element at the end state of the animation */
+    }
+
+    .animate {
+        /* This class gets added via JavaScript */
+        animation: fadeInLeft 1s forwards;
+        /* 'forwards' keeps the element in the final state post-animation */
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 2rem;
         color: #000;
     }
+
     .navbar-expand-lg .navbar-nav .nav-link .active {
         color: #000 !important;
         font-weight: 900;
     }
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
         color: #000 !important;
     }
-    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link:hover{
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link:hover {
         color: #000 !important;
     }
-    .bg-light{
+
+    .bg-light {
         background-color: #fff !important;
     }
 
     .img-fluid {
-            width: 30% !important;
-        }
-    .sww-logo{
+        width: 30% !important;
+    }
+
+    .sww-logo {
         width: 13%;
         margin-right: 2%;
     }
@@ -77,433 +96,853 @@
     /* Section */
 
     .image-container {
-                    width: 100%;
-                    position: relative;
-                    height: auto; /* Adjust height based on content */
-                }
-                .image-container img {
-                    position: absolute;
-                    top: 0;
-                    left: 30;
-                    width: auto;  /* Maintain original image width */
-                    height: auto; /* Maintain original image height */
-                    opacity: 0;   /* Start all images as invisible */
-                    transition: opacity 1s ease-in-out;
-                    z-index: 0;   /* Start with a base z-index */
-                }
-                .image-container img:first-child {
-                    opacity: 1;   /* Make the first image visible initially */
-                    z-index: 1;
-                }
-                
-
-              
-                /* Footer */
-footer{
-    background-color: #94BBCC;
-    padding: 2%;
-}
-                .social-media{
-    display: flex;
-    width: 70%;
-    flex-direction: row;justify-content: flex-start;align-items: flex-start;
-  }
-.footer_logo{
-  margin-left: -6%;
-}
-.footer_address {
-  text-align: right;
-}
-.footer_address img{
- margin-right: -10%;
-}
-
-
-.social_footer_classes{
-  width:100%;
-  margin-top: 3%;
-  margin-left: -80%;
-}
-.social-media > ul > li > a > img{
-      margin-left: -74% ;
-
-    } 
-    .contact_images{
-      width:14%;margin-top: 3%;
-    }
-    .contact-info li{
-    margin-left: -3%;
-  }
-  #Banner-section{
-    height: 100vh;
-  }
-
-
-  .footer_logo{
-      width: 40%;
-    }
-.banner-panel{
-    width: 100%;
-}
-
-.footer {
-    font-size: 1.2rem;
-}
-.social-media .bx{
-    font-size: 2.4rem;
-}
-
-.customizations{
-
-    display: flex;
-    justify-content: center;align-items: center;
-    flex-direction: column;
-
-}
-.image-section{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                }
-.image-section img {
-    margin: 1%;
-    width: 55%;
-}
-.images-with-text{
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.navbar-brand {
-    color: #000 !important;
-}
-.common-heading{
-    border-bottom: 4px solid #94BBCC;
-    margin-bottom: 5%;
-}
-
-.common-button{
-
-    border: none;
-    background-color: #94BBCC;
-    padding: 1%;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    transition: all ease-in-out .2s;
-}
-
-.common-button:hover{
-    color: white;
-    cursor: pointer;
-    background-color: #5097B3;
-}
-/* About Us Section */
-#aboutus{
-    height: auto;
-    margin-top: 5%;
-}
-
-#productcat{
-    height: auto;
-    margin: 5%;
-}
-.about-us-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.about-us-header {
-            /* background-color: #e0e0e0; Slightly darker gray for the header */
-            color: black; /* Black text color */
-            display: inline-block; /* Only as wide as the content */
-            padding: 10px 40px; /* Padding around the text */
-            z-index: 2;
-            text-transform: uppercase;
-            font-size: 2.4rem;
-            /* font-family: "Bebas Neue", sans-serif; */
-            font-family: "Lora", serif;
-            /* font-family: "Lato", sans-serif; */
-            font-weight: 600;
-            letter-spacing: 2px;
-            position: relative; /* Needed for absolute positioning of the border */
-        }
-
-        .about-us-header::after {
-            content: ''; /* Required for pseudo-elements */
-            position: absolute; /* Position relative to the header */
-            bottom: 50%; /* Start from the bottom, goes up to half the header's height */
-            height: 27%; /* Half the height of the header */
-            left: 0; /* Align to the left side of the header */
-            right: 0; /* Align to the right side of the header */
-            background-color: #cce4ee; /* Black background for the pseudo-border */
-            z-index: -1;
-            top: 50%;
-        }
-
-.about-us-section p{
-    font-size: 1.3rem;
-}
-
-/* Swiper */
-.swiper {
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        position: relative;
+        height: auto;
+        /* Adjust height based on content */
     }
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #5097B3;
-      display: flex;
-      height: 50vh;
-      justify-content: center;
-      align-items: center;
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 30;
+        width: auto;
+        /* Maintain original image width */
+        height: auto;
+        /* Maintain original image height */
+        opacity: 0;
+        /* Start all images as invisible */
+        transition: opacity 1s ease-in-out;
+        z-index: 0;
+        /* Start with a base z-index */
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 30vh;
-      object-fit: cover;
+    .image-container img:first-child {
+        opacity: 1;
+        /* Make the first image visible initially */
+        z-index: 1;
     }
 
-.unveil li{
-  margin-left: -2%;
-}
 
 
-
-    
-    @media (max-width: 768px) {
-  .contact-info li{
-    margin-left: -3%;
-  }
-  .footer {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
-    .col-md-4 {
-      text-align: center;
-      margin-bottom: 20px;
+    /* Footer */
+    footer {
+        background-color: #94BBCC;
+        padding: 2%;
     }
 
     .social-media {
-      width: 84%;
-      margin-left: -12%;
-      
+        display: flex;
+        width: 70%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
-    .social-media li {
-      margin: 0 10px;
-      margin-top: 4%;
-      
-    }
-.footer_address{
-  font-size: smaller;
-}
     .footer_logo {
-      width: 30%;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      float: left;
-      margin-top: 4%;
-      margin-left: -4%;
+        margin-left: -6%;
     }
-    .footer_logo img{
-      width: 22%
-    }
-    .social-media  img{
-      margin-left: -2% !important;
-      width: 100%;
-    } 
-  .footer_address{
-    font-size: small;
-    text-align: right;
-  }
-  .contact-info{
-    font-size: smaller;
-    text-align: left;
-  }
-  .contact-info img{
-    width: 10%;
-  }
-  .footer .col-md-4{
-    margin-bottom: 10px;
-  }
-  .footer h3{
-    font-size: 1rem;
-    text-align: left;
-  }
-  }
-  @media only screen   
-  and (min-width: 1030px)   
-  and (max-width: 1366px) 
-  {
-    .footer_logo{
-      width: 40%;
-    }
-  }
-  </style>
-  <body>
 
-    <!-- <section id="Banner-section mb-5 mt-5 fadeInLeft">
-        <img src="./sww-product-catalog.png" alt="" class="w-100 fadeInLeft ">
-             
-             <div class="container">
-     
-             </div>
-            
-           
-             
-           </section> -->
-     
+    .footer_address {
+        text-align: right;
+    }
+
+    .footer_address img {
+        margin-right: -10%;
+    }
+
+
+    .social_footer_classes {
+        width: 100%;
+        margin-top: 3%;
+        margin-left: -80%;
+    }
+
+    .social-media>ul>li>a>img {
+        margin-left: -74%;
+
+    }
+
+    .contact_images {
+        width: 14%;
+        margin-top: 3%;
+    }
+
+    .contact-info li {
+        margin-left: -3%;
+    }
+
+#Banner-section .card{
+    background: transparent;
+    transition: all ease-in-out .15s;
+    border: none;
+    color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#Banner-section .card:hover{
+    background: rgb(61, 60, 60);
+    transition: all ease-in-out .45s;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#Banner-section{
+    height: 80vh;
+    width: 100%;
+    /* background: url('./images/banner.jpeg'); */
+    backdrop-filter: blur(125px); /* Adjust the blur intensity as needed */
+    object-fit: contain;
+    background-position: center;
+    aspect-ratio: 12/9;
+   
+  }
+
+
+
+  #Banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/banner.jpeg');
+  /* background-image: url('./images/banner.jpeg'); Replace 'background.jpg' with your actual background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Ensure the background is behind other content */
+  opacity: 0.9; /* Adjust the opacity as needed */
+  /* backdrop-filter: blur(500px);  */
+  filter: blur(8px);
+}
+
+    .Textual {
+        display: flex;
+        height: 80vh;
+        margin-left: 2%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .create,
+    .awesome {
+        color: #fff;
+        font-size: 5rem !important;
+    }
+
+    .typing-text {
+        color: #fff;
+        min-height: 200px;
+        /* Adjust based on longest text */
+        display: inline-block;
+        /* float: left; */
+        font-size: 10rem;
+        font-family: "Bebas Neue", sans-serif;
+        overflow: hidden;
+        /* Ensures the animation doesn't overflow */
+        white-space: nowrap;
+        /* Prevents text from wrapping */
+        border-right: 2px solid #94BBCC;
+    }
+
+
+    .footer_logo {
+        width: 40%;
+    }
+
+    .banner-panel {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+
+    .social-media .bx {
+        font-size: 2.4rem;
+    }
+
+    .customizations {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .image-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .image-section img {
+        margin: 1%;
+        width: 55%;
+    }
+
+    .images-with-text {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        color: #000 !important;
+    }
+
+    .common-heading {
+        border-bottom: 4px solid #94BBCC;
+        margin-bottom: 5%;
+    }
+
+    .common-button {
+
+        border: none;
+        background-color: #94BBCC;
+        padding: 1%;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        transition: all ease-in-out .2s;
+    }
+
+    .common-button:hover {
+        color: white;
+        cursor: pointer;
+        background-color: #5097B3;
+    }
+
+    /* About Us Section */
+    #aboutus {
+        height: auto;
+        margin-top: 5%;
+    }
+
+    #productcat {
+        height: auto;
+        margin: 5%;
+    }
+
+    .about-us-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-us-header {
+        /* background-color: #e0e0e0; Slightly darker gray for the header */
+        color: black;
+        /* Black text color */
+        display: inline-block;
+        /* Only as wide as the content */
+        padding: 10px 40px;
+        /* Padding around the text */
+        z-index: 2;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        /* font-family: "Bebas Neue", sans-serif; */
+        font-family: "Lora", serif;
+        /* font-family: "Lato", sans-serif; */
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: relative;
+        /* Needed for absolute positioning of the border */
+    }
+
+    .about-us-header::after {
+        content: '';
+        /* Required for pseudo-elements */
+        position: absolute;
+        /* Position relative to the header */
+        bottom: 50%;
+        /* Start from the bottom, goes up to half the header's height */
+        height: 27%;
+        /* Half the height of the header */
+        left: 0;
+        /* Align to the left side of the header */
+        right: 0;
+        /* Align to the right side of the header */
+        background-color: #cce4ee;
+        /* Black background for the pseudo-border */
+        z-index: -1;
+        top: 50%;
+    }
+
+    .about-us-section p {
+        font-size: 1.3rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .para-content {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .dalle-image {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    /* Swiper */
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        /* background: #5097B3; */
+        display: flex;
+        padding: 4%;
+        /* height: 50vh; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        /* height: 30vh; */
+        object-fit: cover;
+        filter: drop-shadow(10px 10px #94BBCC);
+    }
+.main-independent-card{
+    margin-right: .5%;
+    width: 37.5%;
+}
+
+    .first-section{
+display: flex;
+flex-direction: row;
+}
+.second-section{
+    display: flex;
+    flex-direction: row;
+}
+    @media (max-width: 768px) {
+        .main-independent-card{
+    margin-right: 0%;
+    width: 100%;
+}
+
+        .Textual {
+            display: flex;
+            height: auto;
+            margin-left: 2%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+.first-section{
+
+    flex-direction: column;
+}
+.second-section{
+    flex-direction: column;
+}
+        .create,
+        .awesome {
+            color: #fff;
+            font-size: 2rem !important;
+        }
+
+        .typing-text {
+            color: #fff;
+            min-height: 20px;
+            /* Adjust based on longest text */
+            display: inline-block;
+            /* float: left; */
+            font-size: 3rem;
+            font-family: "Bebas Neue", sans-serif;
+            overflow: hidden;
+            /* Ensures the animation doesn't overflow */
+            white-space: nowrap;
+            /* Prevents text from wrapping */
+            border-right: 2px solid #94BBCC;
+        }
+
+        #Banner-section {
+            height: auto;
+            width: 100%;
+            background: url('./images/banner.jpeg');
+            backdrop-filter: blur(5px);
+            /* Adjust the blur intensity as needed */
+            object-fit: contain;
+            background-position: center;
+            aspect-ratio: 12/9;
+
+        }
+
+        .contact-info li {
+            margin-left: -3%;
+        }
+
+        .navbar-light .navbar-brand {
+            width: 70%;
+        }
+
+        .para-content {
+            width: 100%;
+            padding: 2%;
+            text-align: justify;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .swiper-slide {
+
+            padding: 3%;
+        }
+
+        .swiper-slide img {
+
+            width: 60%;
+        }
+
+        .common-button {
+            padding: 2%;
+        }
+
+        .images-with-text {
+            width: 25%;
+        }
+
+        .about-us-section p {
+            font-size: .9rem;
+        }
+
+        .dalle-image {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+        }
+
+        .about-us-header {
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .col-md-4 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-media {
+            width: 84%;
+            margin-left: -12%;
+
+        }
+
+        .social-media li {
+            margin: 0 10px;
+            margin-top: 4%;
+
+        }
+
+        .footer_address {
+            font-size: smaller;
+        }
+
+        .footer_logo {
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            float: left;
+            margin-top: 4%;
+            margin-left: -4%;
+        }
+
+        .footer_logo img {
+            width: 22%
+        }
+
+        .social-media img {
+            margin-left: -2% !important;
+            width: 100%;
+        }
+
+        .footer_address {
+            font-size: small;
+            text-align: right;
+        }
+
+        .contact-info {
+            font-size: smaller;
+            text-align: left;
+        }
+
+        .contact-info img {
+            width: 10%;
+        }
+
+        .footer .col-md-4 {
+            margin-bottom: 10px;
+        }
+
+        .footer h3 {
+            font-size: 1rem;
+            text-align: left;
+        }
+
+
+    }
+
+    @media only screen and (min-width: 1030px) and (max-width: 1366px) {
+        .footer_logo {
+            width: 40%;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- <section id="Banner-section" class="fadeInLeft">
+
+        <div class="Textual">
+            <h2 class="create">We </h2>
+            <h1 class="awesome mb-5">
+                CURATE
+            </h1>
+            <h1 class="typing-text" data-texts='["TUFTED ARTISTRIES", "KNOTTED LUXURIES", "WALL WORK","WALL ART"]'>
+            </h1>
+        </div>
+    </section> -->
+
     <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light">
         <div class="container fadeInLeft">
-          <a class="navbar-brand" href="#">
-            <img src="../images/swwlogo.png" alt="" class = 'sww-logo'>Studio Woven Walls
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-end justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/aboutus/">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">Blogs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
-              </li>
-
-
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
-            </ul>
-            <!-- <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="../images/swwlogo.png" alt="" class='sww-logo'>Studio Woven Walls
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 align-items-end justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/aboutus/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+            </div>
         </div>
-      </nav>
+    </nav>
 
 
-      <div class="container mb-5 about-us-section fadeInLeft">
 
-        <div class="about-us-header mb-5">
-            Wisdom Blogs
-        </div>
-        <div class="main-content ">
 
-            <p class="fadeInLeft">
-                <h2>
-                    Introducing Studio Woven Walls: Where Artistry Meets Interior Design
-                </h2>
 
-Welcome to Studio Woven Walls, where creativity, craftsmanship, and interior design converge to transform your space into a captivating canvas of expression. We are thrilled to embark on this journey of weaving together the threads of artistry and innovation to bring you an exquisite collection of woven wall art.
+    <body>
 
-At Studio Woven Walls, we believe that every wall has a story to tell and every space has the potential to be a work of art. Our mission is to redefine the concept of wall decor by introducing handcrafted woven pieces that not only adorn your walls but also evoke emotion, spark conversation, and elevate the aesthetic appeal of your surroundings.
+        <section id="Banner-section" class="fadeInLeft p-5" loading="lazy">
+            <div class="container mt-5" style="height: auto;">
+                <div class="first-section" style="">
+                    <div class="textual-content">
 
-What sets Studio Woven Walls apart is our commitment to quality, craftsmanship, and sustainability. Each piece in our collection is meticulously handcrafted by skilled artisans using premium materials sourced from sustainable and ethical suppliers. From intricately woven tapestries to minimalist wall hangings, every creation reflects our dedication to excellence and attention to detail.
+                        <h1 class="container" style="font-family: 'Bebas Neue', sans-serif; font-size: 5rem;color: #000;">
+                            Woven Wisdom
+                        </h1>
+                        <p class="mx-3">
+                            Woven Wisdom is a concept that embodies the fusion of knowledge, creativity, and insight.<br>
+                             Imagine a tapestry intricately woven with threads of wisdom, each strand representing a unique perspective, idea, or experience.
+                        </p>
+                    </div>
+                        
+                        <div class="main-independent-card card p-5" style="">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                    </div>
+                    
+                    <div class="second-section" style="">
+                        
+                        
+                        <div class="card  m-2 p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                        <div class="card m-2  p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                        <div class="card m-2  p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                    </div>
+                    <div class="second-section" style="">
+        
+        
+                        <div class="card  m-2 p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                        <div class="card m-2  p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                        <div class="card m-2  p-5">
+                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+        </section>
 
-But Studio Woven Walls is more than just a purveyor of woven art; it is a destination for inspiration, creativity, and collaboration. Our blog will serve as a platform for exploring the intersection of art and interior design, offering insightful articles, design tips, DIY tutorials, and behind-the-scenes glimpses into the creative process.
-
-Whether you are a seasoned interior designer, a decor enthusiast, or someone looking to add a touch of elegance to your living space, Studio Woven Walls invites you to embark on a journey of discovery and transformation. Join us as we explore the endless possibilities of woven walls and unlock the true potential of your interior spaces.
-
-Stay tuned for updates, exclusive promotions, and new arrivals as we embark on this exciting adventure together. Thank you for choosing Studio Woven Walls to be a part of your design story. Let's weave dreams into reality and turn walls into works of art.
-
-Welcome to Studio Woven Walls – where every thread tells a tale, and every wall is a masterpiece in the making.
-            </p>
-<hr>
-            <p class="fadeInLeft">
-              <h2>
-                Unveiling the Canvas: An Introduction to Interior Design Principles
-              </h2>
-              Welcome to the world of interior design, where every space is a blank canvas waiting to be adorned with creativity, style, and personality. Whether you're a seasoned designer or a novice enthusiast, understanding the fundamental principles of interior design is essential for creating harmonious, functional, and visually captivating spaces. So, let's embark on a journey of exploration as we unravel the foundational elements that shape the art of interior design.
-<br>
-<ul class="unveil"  style="list-style: upper-roman;">
-  <br>          
-<li>
-
-   <b>
-
-     Balance: Finding Equilibrium in Design
-   </b>
-  Balance is the cornerstone of good design, serving as the anchor that harmonizes various elements within a space. There are two types of balance: symmetrical and asymmetrical. Symmetrical balance entails arranging elements evenly around a central axis, while asymmetrical balance involves achieving equilibrium through the careful placement of diverse elements of varying visual weight.
-</li>
-
-<br>
-  <li>
-
-   <b>
-
-     Proportion: The Golden Ratio of Design
-   </b>
-    Proportion refers to the relationship between different elements within a space, ensuring visual harmony and coherence. By adhering to principles such as the golden ratio and scale, designers can create spaces where every element feels proportionate and well-suited to its surroundings.
-  </li>            
-    <br>
-    <li>
-
-  <b>
-
-    Harmony: Crafting Cohesive Compositions
-  </b>
-      Harmony is achieved when all elements within a space come together to create a unified and pleasing whole. This involves considering factors such as color, texture, pattern, and style to ensure that each element complements rather than competes with the others.
-      
-    </li>
     
-<br>
-    <li>
 
-  <b>
+    </body>
 
-    Rhythm: The Beat of Design
-  </b>
-      Rhythm infuses a space with energy and movement, guiding the eye through the design in a deliberate and engaging manner. Whether through repetition, progression, or contrast, rhythm adds depth and dynamism to interior compositions, creating visual interest and intrigue.
-     
-    </li>
-    <br>
-    <li>
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" style="margin-right: 3%;">
+                    <h3 style="color: #fff;">Connect with us!</h3>
+                    <ul class="contact-info" style="list-style: none;">
+                        <li><a style="text-decoration: none; color: #fff;" href="mailto:studiowovenwalls@gmail.com"><i
+                                    class='bx bx-envelope'></i> studiowovenwalls@gmail.com </a></li>
+                        <li><a style="text-decoration: none; color: #fff;" href="tel:+918600172559"><i
+                                    class='bx bx-phone-call'></i> +91 8076240785</li></a>
+                    </ul>
+                </div>
 
-  <b>
 
-    Emphasis: Directing the Spotlight
-  </b>
-      Emphasis allows designers to highlight focal points within a space, drawing attention to key elements and creating visual hierarchy. Whether through bold colors, striking patterns, or eye-catching artwork, emphasis adds drama and personality to interior design, guiding the viewer's gaze and evoking emotion.
-    </li>  
-              <br>
-            </ul>
-            As we delve deeper into the realm of interior design, these principles will serve as our guiding stars, illuminating the path toward creating spaces that are not only beautiful and functional but also imbued with meaning and purpose. So, let your imagination soar, and let's embark on this creative journey together, one design principle at a time.
-            </p>
-            
+                <div class="col-md-4">
+                    <h3 style="color: #fff;">Social Media Presence</h3>
+                    <ul class="social-media" style="list-style: none;">
+                        <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                                href=" https://www.instagram.com/studiowovenwalls/ " class="instagram" target='_blank'>
+                                <i class='bx bxl-instagram'></i></a></li>
+                        <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                                href="https://www.youtube.com/channel/UCTXtvdKul3_k0qTRTc9A5Iw" class="instagram"
+                                target='_blank'><i class='bx bxl-youtube'></i></a></li>
+                        <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                                href="https://www.linkedin.com/in/aditi-bansal-746943147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                class="instagram" target='_blank'><i class='bx bxl-linkedin'></i></a></li>
+                        <!-- <li><a  style = "text-decoration: none; color: #fff;" href="https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU" target='_blank' class="twitter"></a></li>
+                <li><a  style = "text-decoration: none; color: #fff;" href="https://twitter.com/vbblegal" class="instagram" target='_blank'><i class='bx bxl-instagram'></i></a></li>
+                <li><a  style = "text-decoration: none; color: #fff;" href="https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in" class="instagram" target='_blank'> <i class='bx bxl-instagram'></i></a></li> -->
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer_address">
+                    <img style="" src="../images/sww-logo.jpeg" class="footer_logo"><br>
+
+                    <!-- <li style="color: white; list-style: none;" class="mt-3">424, MOHID HEIGHTS, RTO Rd, </li>
+                <li style="color: white; list-style: none;">Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053.</li> -->
+                    <!-- <hr style="opacity: 0.5;">
+                <li style="color: white; list-style: none;">
+                  Swapna Sakar Society, beside Versova Metro Station, Andheri West, Mumbai- 400053
+                </li> -->
+                    <!-- <hr style="opacity: 0.5;">
+                <li style="color: white; list-style: none;" >Office No 303, Pearl Apartment, At Rees, Post Mohopada, Near Panvel, Navi Mumbai 410222.</li> -->
+                </div>
+
+
+
+            </div>
         </div>
-    </div>
+        <p class="mt-2" style="color: #fff;margin-right: 1%; text-align: center;">&copy; 2024 Studio Woven Walls. All
+            rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const observer = new IntersectionObserver(entries => {
+        //         entries.forEach(entry => {
+        //             if (entry.isIntersecting) {
+        //                 entry.target.classList.add('animate');
+        //             }
+        //         });
+        //     }, {
+        //         threshold: 0.5 // Adjust if needed, dictates how much of an element must be in view to trigger
+        //     });
+
+        //     // Target elements with the class 'section' for the animation
+        //     document.querySelectorAll('section').forEach(section => {
+        //         observer.observe(section);
+        //     });
+        // });
+
+    </script>
+    <script>
+        // $(document).ready(function () {
+        //     const images = $('.image-container img');
+        //     let currentIndex = 0;
+        //     let animationInterval = setInterval(revealImage, 2000); // Set the interval
+
+        //     function revealImage() {
+        //         if (currentIndex >= images.length - 1) { // Check if the last image is already displayed
+        //             clearInterval(animationInterval); // Stop the interval
+        //             return; // Exit the function
+        //         }
+        //         const nextIndex = (currentIndex + 1) % images.length;
+        //         images.eq(nextIndex).css('z-index', currentIndex + 2).css('opacity', 1); // Fade in the next image with incrementing z-index
+        //         currentIndex = nextIndex;
+        //     }
+        // });
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var swiper = new Swiper(".mySwiper", {
+        //         slidesPerView: 1,
+        //         spaceBetween: 30,
+        //         pagination: {
+        //             el: ".swiper-pagination",
+        //             clickable: true,
+        //         },
+        //         breakpoints: {
+        //             // when window width is <= 640px
+        //             640: {
+        //                 slidesPerView: 3,
+        //                 spaceBetween: 20
+        //             }
+        //         }
+        //     });
+        // });
+    </script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const typingTextElement = document.querySelector('.typing-text');
+        //     const texts = JSON.parse(typingTextElement.getAttribute('data-texts'));
+        //     let index = 0;
+        //     let textIndex = 0;
+        //     let text = texts[textIndex];
+
+        //     function type() {
+        //         if (index < text.length) {
+        //             typingTextElement.textContent += text.charAt(index);
+        //             index++;
+        //             setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+        //         } else {
+        //             // Call the callback function once typing is complete
+        //             typingComplete();
+        //         }
+        //     }
+
+        //     function typingComplete() {
+        //         // Add your code to execute after typing is complete
+        //         setTimeout(erase, 1000); // Delay before erasing
+        //     }
+
+        //     function erase() {
+        //         if (index > 0) {
+        //             typingTextElement.textContent = text.substring(0, index - 1);
+        //             index--;
+        //             setTimeout(erase, 50); // Adjust erasing speed here (in milliseconds)
+        //         } else {
+        //             textIndex++;
+        //             if (textIndex >= texts.length) textIndex = 0;
+        //             text = texts[textIndex];
+        //             setTimeout(type, 1000); // Delay before typing the next text
+        //         }
+        //     }
+
+        //     type();
+        // });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy-load");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Fallback for browsers without Intersection Observer support
+    lazyImages.forEach(function(lazyImage) {
+      lazyImage.src = lazyImage.dataset.src;
+      lazyImage.classList.remove("lazy-load");
+    });
+  }
+});
+
+    </script>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const sections = document.querySelectorAll('.container'); // Make sure elements have 'section' class
+
+        //     const observer = new IntersectionObserver(entries => {
+        //         entries.forEach(entry => {
+        //             if (entry.isIntersecting) {
+        //                 entry.target.classList.add('fadeInLeft');
+        //             } else {
+        //                 entry.target.classList.remove('fadeInLeft');
+        //             }
+        //         });
+        //     }, {
+        //         threshold: 0.5 // Trigger when half of the element is in view
+        //     });
+
+        //     sections.forEach(section => {
+        //         observer.observe(section);
+        //     });
+        // });
+
+    </script>
+
+</html>
+
+
+<!-- <script src="js/owl.carousel.min.js"></script>
+<script src="./js/script.js"></script> -->
