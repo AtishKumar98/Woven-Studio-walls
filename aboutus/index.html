@@ -15,16 +15,21 @@
   </head>
   <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
      @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    
     body{
         font-family: "Poppins", sans-serif;
         /* font-family: "Bebas Neue", sans-serif; */
         font-size: 1rem;
+        color: #FFF;
+        background-color: #000;
         /* color: white !important; */
     }
 
@@ -48,22 +53,42 @@
 .animate { /* This class gets added via JavaScript */
   animation: fadeInLeft 1s forwards; /* 'forwards' keeps the element in the final state post-animation */
 }
-    .navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link{
         padding-left: 2rem;
-        color: #000;
+        color: #FFF;
+        background-color: #000;
     }
     .navbar-expand-lg .navbar-nav .nav-link .active {
-        color: #000 !important;
+        color: #FFF !important;
         font-weight: 900;
+        
     }
     .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-        color: #000 !important;
+        color: #FFF !important;
     }
     .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link:hover{
-        color: #000 !important;
+        color: #FFF !important;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link .active {
+        color: #FFF !important;
+        font-weight: 900;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        color: #FFF !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link:hover {
+        color: #fff !important;
+    }
+    .navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 09.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     .bg-light{
-        background-color: #fff !important;
+        background-color: #000 !important;
     }
 
     .img-fluid {
@@ -99,8 +124,8 @@
 
               
                 /* Footer */
-footer{
-    background-color: #94BBCC;
+                footer{
+    background-color: #000;
     padding: 2%;
 }
                 .social-media{
@@ -116,6 +141,17 @@ footer{
 }
 .footer_address img{
  margin-right: -10%;
+}
+                .social-media{
+    display: flex;
+    width: 70%;
+    flex-direction: row;justify-content: flex-start;align-items: flex-start;
+  }
+.footer_logo{
+  margin-left: -6%;
+}
+.footer_address {
+  text-align: right;
 }
 
 
@@ -171,15 +207,15 @@ footer{
     margin: 1%;
     width: 55%;
 }
+.navbar-light .navbar-brand {
+    color:#FFF;
+}
 .images-with-text{
     width: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.navbar-brand {
-    color: #000 !important;
 }
 .common-heading{
     border-bottom: 4px solid #94BBCC;
@@ -216,37 +252,44 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
     flex-direction: column;
 }
 
 .about-us-header {
             /* background-color: #e0e0e0; Slightly darker gray for the header */
-            color: black; /* Black text color */
+            color: #94BBCC; /* Black text color */
             display: inline-block; /* Only as wide as the content */
             padding: 10px 40px; /* Padding around the text */
             z-index: 2;
             text-transform: uppercase;
             font-size: 2.4rem;
             /* font-family: "Bebas Neue", sans-serif; */
-            font-family: "Lora", serif;
+            font-family: "Dancing Script", cursive;
+            /* font-family: "Lora", serif; */
             /* font-family: "Lato", sans-serif; */
             font-weight: 600;
             letter-spacing: 2px;
             position: relative; /* Needed for absolute positioning of the border */
         }
+/*** 
+***/
 
-        .about-us-header::after {
-            content: ''; /* Required for pseudo-elements */
-            position: absolute; /* Position relative to the header */
-            bottom: 50%; /* Start from the bottom, goes up to half the header's height */
-            height: 27%; /* Half the height of the header */
-            left: 0; /* Align to the left side of the header */
-            right: 0; /* Align to the right side of the header */
-            background-color: #cce4ee; /* Black background for the pseudo-border */
+.about-us-header::after {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute; /* Position relative to the header */
+  bottom: 50%; /* Start from the bottom, goes up to half the header's height */
+  height: 27%; /* Half the height of the header */
+  left: 0; /* Align to the left side of the header */
+  right: 0; /* Align to the right side of the header */
+            /* background-color: #fff; Black background for the pseudo-border */
             z-index: -1;
             top: 50%;
-        }
-
+          }
+          
+          .about-us-section p{
+    font-size: 1.3rem;
+}
 .about-us-section p{
     font-size: 1.3rem;
 }
@@ -292,6 +335,7 @@ footer{
 
 .para-content {
     width: 70%;
+    font-family: "Playfair Display", serif;
     margin-left: 7%;
 }
 .portfolio-header{
@@ -311,6 +355,30 @@ footer{
   .contact-info li{
     margin-left: -3%;
   }
+  
+.main-content{
+    display: flex;
+    flex-direction: column;
+
+}
+.about-us-section{
+  height: auto;
+}
+.img-founder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    width: 100%;
+}
+.para-content {
+    width: 100%;
+    padding: 3%;
+    margin-left: 0%;
+}
+.img-founder img{
+  width: 30%;
+}
   .footer {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -337,15 +405,16 @@ footer{
 }
     .footer_logo {
       width: 30%;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: none;
+      margin-right: none;
       display: block;
-      float: left;
-      margin-top: 4%;
-      margin-left: -4%;
+      /* float: ; */
+      margin-top: 0%;
+      margin-left: 0%;
     }
     .footer_logo img{
-      width: 22%
+      width: 22%;
+      margin-right: 0%;
     }
     .social-media  img{
       margin-left: -2% !important;
@@ -355,6 +424,9 @@ footer{
     font-size: small;
     text-align: right;
   }
+  .footer_address img {
+        margin-left: 35%;
+    }
   .contact-info{
     font-size: smaller;
     text-align: left;
@@ -369,6 +441,9 @@ footer{
     font-size: 1rem;
     text-align: left;
   }
+      .navbar-light .navbar-brand {
+        width: 70%;
+    }
   }
   @media only screen   
   and (min-width: 1030px)   
@@ -452,7 +527,7 @@ footer{
             <div class="img-founder">
                 <img src="../images/aditi-portfolio.jpeg" alt="">
                 <div class="portfolio-header">
-                    <p>Founder</p>
+                    <p>Ms. Aditi Bansal (Founder)</p>
                     <p>Studion Woven Walls</p>
                 </div>
             </div>
@@ -464,3 +539,214 @@ footer{
             
         </div>
     </div>
+    
+    <footer class="footer mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4" style="margin-right: 3%;">
+                  <h3 style="color: #fff;">Connect with us!</h3>
+                  <ul class="contact-info" style="list-style: none;">
+                      <li><a style="text-decoration: none; color: #fff;" href="mailto:studiowovenwalls@gmail.com"><i
+                                  class='bx bx-envelope'></i> studiowovenwalls@gmail.com </a></li>
+                      <li><a style="text-decoration: none; color: #fff;" href="tel:+918600172559"><i
+                                  class='bx bx-phone-call'></i> +91 8076240785</li></a>
+                  </ul>
+              </div>
+
+
+              <div class="col-md-4">
+                  <h3 style="color: #fff;">Social Media Presence</h3>
+                  <ul class="social-media" style="list-style: none;">
+                      <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                              href=" https://www.instagram.com/studiowovenwalls/ " class="instagram" target='_blank'>
+                              <i class='bx bxl-instagram'></i></a></li>
+                      <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                              href="https://www.youtube.com/channel/UCTXtvdKul3_k0qTRTc9A5Iw" class="instagram"
+                              target='_blank'><i class='bx bxl-youtube'></i></a></li>
+                      <li><a style="text-decoration: none; color: #fff;text-align: left;"
+                              href="https://www.linkedin.com/in/aditi-bansal-746943147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                              class="instagram" target='_blank'><i class='bx bxl-linkedin'></i></a></li>
+                      <!-- <li><a  style = "text-decoration: none; color: #fff;" href="https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU" target='_blank' class="twitter"></a></li>
+              <li><a  style = "text-decoration: none; color: #fff;" href="https://twitter.com/vbblegal" class="instagram" target='_blank'><i class='bx bxl-instagram'></i></a></li>
+              <li><a  style = "text-decoration: none; color: #fff;" href="https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in" class="instagram" target='_blank'> <i class='bx bxl-instagram'></i></a></li> -->
+                  </ul>
+              </div>
+
+              <div class="col-md-3 footer_address">
+                  <img style="" src="../images/swwlogo.png" class="footer_logo"><br>
+
+                  <!-- <li style="color: white; list-style: none;" class="mt-3">424, MOHID HEIGHTS, RTO Rd, </li>
+              <li style="color: white; list-style: none;">Suresh Nagar, Andheri West, Mumbai, Maharashtra 400053.</li> -->
+                  <!-- <hr style="opacity: 0.5;">
+              <li style="color: white; list-style: none;">
+                Swapna Sakar Society, beside Versova Metro Station, Andheri West, Mumbai- 400053
+              </li> -->
+                  <!-- <hr style="opacity: 0.5;">
+              <li style="color: white; list-style: none;" >Office No 303, Pearl Apartment, At Rees, Post Mohopada, Near Panvel, Navi Mumbai 410222.</li> -->
+              </div>
+
+
+
+          </div>
+      </div>
+      <p class="mt-2" style="color: #fff;margin-right: 1%; text-align: center;">&copy; 2024 Studio Woven Walls. All
+          rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //     const observer = new IntersectionObserver(entries => {
+      //         entries.forEach(entry => {
+      //             if (entry.isIntersecting) {
+      //                 entry.target.classList.add('animate');
+      //             }
+      //         });
+      //     }, {
+      //         threshold: 0.5 // Adjust if needed, dictates how much of an element must be in view to trigger
+      //     });
+
+      //     // Target elements with the class 'section' for the animation
+      //     document.querySelectorAll('section').forEach(section => {
+      //         observer.observe(section);
+      //     });
+      // });
+
+  </script>
+  <script>
+      // $(document).ready(function () {
+      //     const images = $('.image-container img');
+      //     let currentIndex = 0;
+      //     let animationInterval = setInterval(revealImage, 2000); // Set the interval
+
+      //     function revealImage() {
+      //         if (currentIndex >= images.length - 1) { // Check if the last image is already displayed
+      //             clearInterval(animationInterval); // Stop the interval
+      //             return; // Exit the function
+      //         }
+      //         const nextIndex = (currentIndex + 1) % images.length;
+      //         images.eq(nextIndex).css('z-index', currentIndex + 2).css('opacity', 1); // Fade in the next image with incrementing z-index
+      //         currentIndex = nextIndex;
+      //     }
+      // });
+  </script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
+  <!-- Initialize Swiper -->
+  <script>
+      // document.addEventListener('DOMContentLoaded', function () {
+      //     var swiper = new Swiper(".mySwiper", {
+      //         slidesPerView: 1,
+      //         spaceBetween: 30,
+      //         pagination: {
+      //             el: ".swiper-pagination",
+      //             clickable: true,
+      //         },
+      //         breakpoints: {
+      //             // when window width is <= 640px
+      //             640: {
+      //                 slidesPerView: 3,
+      //                 spaceBetween: 20
+      //             }
+      //         }
+      //     });
+      // });
+  </script>
+  <script>
+      // document.addEventListener('DOMContentLoaded', function () {
+      //     const typingTextElement = document.querySelector('.typing-text');
+      //     const texts = JSON.parse(typingTextElement.getAttribute('data-texts'));
+      //     let index = 0;
+      //     let textIndex = 0;
+      //     let text = texts[textIndex];
+
+      //     function type() {
+      //         if (index < text.length) {
+      //             typingTextElement.textContent += text.charAt(index);
+      //             index++;
+      //             setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+      //         } else {
+      //             // Call the callback function once typing is complete
+      //             typingComplete();
+      //         }
+      //     }
+
+      //     function typingComplete() {
+      //         // Add your code to execute after typing is complete
+      //         setTimeout(erase, 1000); // Delay before erasing
+      //     }
+
+      //     function erase() {
+      //         if (index > 0) {
+      //             typingTextElement.textContent = text.substring(0, index - 1);
+      //             index--;
+      //             setTimeout(erase, 50); // Adjust erasing speed here (in milliseconds)
+      //         } else {
+      //             textIndex++;
+      //             if (textIndex >= texts.length) textIndex = 0;
+      //             text = texts[textIndex];
+      //             setTimeout(type, 1000); // Delay before typing the next text
+      //         }
+      //     }
+
+      //     type();
+      // });
+
+  </script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+
+if ("IntersectionObserver" in window) {
+  let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        let lazyImage = entry.target;
+        lazyImage.src = lazyImage.dataset.src;
+        lazyImage.classList.remove("lazy-load");
+        lazyImageObserver.unobserve(lazyImage);
+      }
+    });
+  });
+
+  lazyImages.forEach(function(lazyImage) {
+    lazyImageObserver.observe(lazyImage);
+  });
+} else {
+  // Fallback for browsers without Intersection Observer support
+  lazyImages.forEach(function(lazyImage) {
+    lazyImage.src = lazyImage.dataset.src;
+    lazyImage.classList.remove("lazy-load");
+  });
+}
+});
+
+  </script>
+  <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //     const sections = document.querySelectorAll('.container'); // Make sure elements have 'section' class
+
+      //     const observer = new IntersectionObserver(entries => {
+      //         entries.forEach(entry => {
+      //             if (entry.isIntersecting) {
+      //                 entry.target.classList.add('fadeInLeft');
+      //             } else {
+      //                 entry.target.classList.remove('fadeInLeft');
+      //             }
+      //         });
+      //     }, {
+      //         threshold: 0.5 // Trigger when half of the element is in view
+      //     });
+
+      //     sections.forEach(section => {
+      //         observer.observe(section);
+      //     });
+      // });
+
+  </script>
+
+</html>
