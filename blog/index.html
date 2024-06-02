@@ -212,20 +212,20 @@
     transition: all ease-in-out .15s;
     border: none;
     color: #fff;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #Banner-section .card:hover{
     background: rgb(61, 60, 60);
     transition: all ease-in-out .45s;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 #Banner-section{
     height: 80vh;
     width: 100%;
     /* background: url('./images/banner.jpeg'); */
-    backdrop-filter: blur(125px); /* Adjust the blur intensity as needed */
+    backdrop-filter: blur(5px); /* Adjust the blur intensity as needed */
     object-fit: contain;
     background-position: center;
     aspect-ratio: 12/9;
@@ -461,7 +461,10 @@
     }
 .main-independent-card{
     margin-right: .5%;
-    width: 37.5%;
+    width: 50.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
     .first-section{
@@ -470,11 +473,30 @@ flex-direction: row;
 }
 .second-section{
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
+}
+.second-section .card{
+    width: 39%;
+
+}
+.third-section{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
 }
     @media (max-width: 768px) {
         .main-independent-card{
     margin-right: 0%;
+    width: 100%;
+}
+.second-section .card {
+    width: 99%;
+}
+.third-section  {
+    flex-direction: column;
+}
+.third-section .card {
     width: 100%;
 }
 
@@ -519,11 +541,11 @@ flex-direction: row;
             height: auto;
             width: 100%;
             background: url('./images/banner.jpeg');
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(115px);
             /* Adjust the blur intensity as needed */
             object-fit: contain;
-            background-position: center;
             aspect-ratio: 12/9;
+            background-position: center;
 
         }
 
@@ -738,23 +760,23 @@ flex-direction: row;
                             Introducing Studio Woven Walls: Where Artistry Meets Interior Design
                         </div>
                         <div class="card m-2  p-5">
-                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                            Unveiling the Canvas: An Introduction to Interior Design Principles
                         </div>
-                        <div class="card m-2  p-5">
+                        <!-- <div class="card m-2  p-5">
                             Introducing Studio Woven Walls: Where Artistry Meets Interior Design
-                        </div>
+                        </div> -->
                     </div>
-                    <div class="second-section" style="">
+                    <div class="third-section" style="">
         
         
                         <div class="card  m-2 p-5">
-                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                            Creating a Focal Point in Your Room
                         </div>
                         <div class="card m-2  p-5">
-                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                            Tailoring Artistry: Customizing Wall Art to Perfectly Fit Your Style
                         </div>
                         <div class="card m-2  p-5">
-                            Introducing Studio Woven Walls: Where Artistry Meets Interior Design
+                            Mastering Pattern Play: A Guide to Mixing and Matching Patterns and Prints
                         </div>
                     </div>
                    
@@ -792,6 +814,7 @@ flex-direction: row;
                         <li><a style="text-decoration: none; color: #fff;text-align: left;"
                                 href="https://www.linkedin.com/in/aditi-bansal-746943147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                                 class="instagram" target='_blank'><i class='bx bxl-linkedin'></i></a></li>
+                                <li><a  style = "text-decoration: none; color: #fff;" href="https://www.facebook.com/profile.php?id=61560076322633&mibextid=LQQJ4d" target='_blank' class="instagram"><i class='bx bxl-facebook' ></i></a></li>
                         <!-- <li><a  style = "text-decoration: none; color: #fff;" href="https://www.facebook.com/profile.php?id=100095018269683&locale=hi_IN&paipv=0&eav=AfaKrcQHQz9HQtEmVUwoOn7O-jrT848g1EC97qw3LcVFIXmf_hh1MC2XA8-G2NPrkqU" target='_blank' class="twitter"></a></li>
                 <li><a  style = "text-decoration: none; color: #fff;" href="https://twitter.com/vbblegal" class="instagram" target='_blank'><i class='bx bxl-instagram'></i></a></li>
                 <li><a  style = "text-decoration: none; color: #fff;" href="https://www.linkedin.com/in/vbb-legal-2a746a289/?originalSubdomain=in" class="instagram" target='_blank'> <i class='bx bxl-instagram'></i></a></li> -->
