@@ -552,7 +552,7 @@ footer{
   </style>
   <body>
 
-    <section id="Banner-section" class="fadeInLeft">
+    <section id="Banner-section" class="fadeInLeft section">
       
       <div class="Textual">
         <h2 class="awesome">We <b>CURATE</b> </h2>
@@ -566,7 +566,7 @@ footer{
              
            </section>
      
-    <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg section sticky-top navbar-light bg-light">
         <div class="container fadeInLeft">
           <a class="navbar-brand" href="#">
             <img src="./images/swwlogo.png" alt="" class = 'sww-logo'>Studio Woven Walls
@@ -599,7 +599,7 @@ footer{
 
 
 
-      <section id="aboutus" class="fadeInLeft ">
+      <section id="aboutus" class="fadeInLeft section ">
         <div class="container mt-5">
             
             <div class="about-us-section fadeInLeft">
@@ -625,7 +625,7 @@ footer{
         </section>
 
 
-        <section id="aboutus" class="container">
+        <section id="aboutus" class="container section">
             <div class="about-us-section container  fadeInLeft">
                 <div class="about-us-header mt-5 mb-5">
                     CATEGORIES
@@ -660,7 +660,7 @@ footer{
         
         </section>
 
-<section id="customization" class="container">
+<section id="customization" class="container section">
     <div class="about-us-section container fadeInLeft">
     <div class="about-us-header mt-5 mb-5">
         Customizations
@@ -701,7 +701,7 @@ we've got you covered with extremely quirky designs, colours and much more.
 
 
 
-      <footer class="footer mt-5">
+      <footer class="footer mt-5 section">
         <div class="container">
           <div class="row">
             <div class="col-md-4" style="margin-right: 3%;">
@@ -853,7 +853,7 @@ we've got you covered with extremely quirky designs, colours and much more.
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('section'); // Make sure elements have 'section' class
+    const sections = document.querySelectorAll('.section'); // Make sure elements have 'section' class
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -864,7 +864,7 @@ we've got you covered with extremely quirky designs, colours and much more.
             }
         });
     }, {
-        threshold: 0.5 // Trigger when half of the element is in view
+        threshold: 0.2 // Trigger when half of the element is in view
     });
 
     sections.forEach(section => {
