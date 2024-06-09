@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M76L33PV69"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M76L33PV69');
+</script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +25,7 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
-    <title>Studio Woven Walls-Products</title>
+    <title>Studio Woven Walls</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -35,9 +44,8 @@
         font-family: "Poppins", sans-serif;
         /* font-family: "Bebas Neue", sans-serif; */
         font-size: 1rem;
-        height: 100vh;
         background-color: #000;
-        color: #FFF !important;
+        color: white !important;
     }
     .navbar-light .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 09.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -138,7 +146,6 @@
         z-index: 0;
         /* Start with a base z-index */
     }
-    
 
     .image-container img:first-child {
         opacity: 1;
@@ -440,27 +447,82 @@
     }
 
     /* Swiper */
+    .main-section{
+        position: relative;
+        height: 10%;
+        width: 50%;
+    }
+
+    .main-section img {
+        width: 40%;
+        object-fit: contain;
+        object-position: center;
+        aspect-ratio: 10/10;
+    }
     .swiper {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
 
     .swiper-slide {
-        text-align: center;
-        /* background: #5097B3; */
-        display: flex;
-        padding: 4%;
-        /* height: 50vh; */
-        justify-content: center;
-        align-items: center;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .swiper-slide img {
-        display: block;
-        width: 100%;
-        /* height: 30vh; */
-        object-fit: cover;
-        filter: drop-shadow(10px 10px #94BBCC);
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    body {
+      background: #000;
+      color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .mySwiper2 {
+      height: 80%;
+      width: 100%;
+    }
+
+    .mySwiper {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 .main-independent-card{
     margin-right: .5%;
@@ -684,25 +746,31 @@ flex-direction: row;
             width: 40%;
         }
     }
-.product-knotted-lux{
-  display: flex;
-  flex-direction: row;
-  /* background-image: url('../images/Dalle.jpg'); */
-  justify-content: space-between;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.product-textual{
-  width: 80%;
-  padding: 5%;
-}
-    .product-image-content{
-      width: 20%;
+
+    .gallery-images{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
-    .product-image-content img{
-      width: 70%;
+
+    .gallery-images img {
+        aspect-ratio: 5/3;
     }
 </style>
+
+<body>
+
+    <!-- <section id="Banner-section" class="fadeInLeft">
+
+        <div class="Textual">
+            <h2 class="create">We </h2>
+            <h1 class="awesome mb-5">
+                CURATE
+            </h1>
+            <h1 class="typing-text" data-texts='["TUFTED ARTISTRIES", "KNOTTED LUXURIES", "WALL WORK","WALL ART"]'>
+            </h1>
+        </div>
+    </section> -->
 
     <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light">
         <div class="container fadeInLeft">
@@ -735,64 +803,70 @@ flex-direction: row;
         </div>
     </nav>
 
-<body >
-    <div class="container mb-5 fadeInLeft"style="height: 100vh;">
-<div class="product-knotted-lux mt-5">
-  <div class="product-textual">
-    <h2>KNOTTED LUXURIES</h2>
-    <p>Crafted with meticulous precision by the hands of artisanal
-      masters, each thread is proof of their unwavering dedication
-      to their craft. The weave whispers ancient tales, the intricate
-      patterns dance across the fabric, echoing the culture of
-      forgotten civilizations.
-      A fine tactile tapestry, they invite your fingers to explore the
-      fine nuances of their surface. Warmth and strength coalesce,
-      encapsulating the dichotomy of nature itself. Knotting caters
-      to portraits, devotional, abstracts and wall designs with one of
-      a kind craftsmanship.</p>
-  </div>
-  <div class="product-image-content">
-    <img src="../images/product-a4.jpeg" alt="">
-  </div>
-</div>
-<div class="product-knotted-lux mt-5">
-  <div class="product-image-content">
-    <img src="../images/p6.jpeg" alt="">
-  </div>
-  <div class="product-textual">
-    <h2>TUFTED ARTISTRIES</h2>
-    <p>Intricate creations which blend traditional textile techniques
-      with modern design sensibilities. The result? Stunning and
-      versatile wall ornaments that add warmth, texture, and
-      character to any space.<br>
-      Tufted wall hangings are not limited to a particular style or
-      theme. Some are bohemian-inspired pieces with fringe and
-      earthy tones, while others are more minimalist designs with
-      clean lines and monochromatic color schemes. This versatility
-      ensures that there's a tufted wall hanging for every taste and
-      interior design preference.</p>
-  </div>
-</div>
+<body>
 
-<div class="product-knotted-lux mt-5">
-  <div class="product-textual">
-    <h2>WALL WORK</h2>
-    <p>
-      Introducing wall work as our abstract line with exquisite art
-pieces fro your walls. Discover the allure of clay draping and
-embrace a renaissance of style with Studio woven walls.
-Explore the depth and authenticity that only natural materials
-can provide, as we usher in a new era of home decor inspired
-by the beauty of earth and the craftsmanship of human hands.
-Elevate your living spaces with the essence of clay, curated
-with passion and delivered with care.
-    </p>
-  </div>
-  <div class="product-image-content">
-    <img src="../images/p5.jpeg" alt="">
-  </div>
+
+
+<div class="main-section container">
+    
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/exhibit-1.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-3.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-4.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-5.jpeg" />
+          </div>
+         
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../images/exhibit-1.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-2.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-3.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-4.jpeg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../images/exhibit-5.jpeg" />
+          </div>
+        
+     
+         
+        </div>
+      </div>
+    
 </div>
-    </div>
+    <!-- <div class="gallery-images">
+
+        <img class="card-image card" style="width: 20%;" src="../images/exhibit-1.jpeg" alt="">
+    <img class="card-image card" style="width: 20%;" src="../images/exhibit-2.jpeg" alt="">
+<img class="card-image card" style="width: 20%;" src="../images/exhibit-3.jpeg" alt="">
+<img  class="card-image card" style="width: 20%;"src="../images/exhibit-4.jpeg" alt="">
+    <img class="card-image card" style="width: 20%;" src="../images/exhibit-5.jpeg" alt="">
+
+</div> -->
+
+
+
 </body>
     
     <footer class="footer mt-5">
@@ -853,8 +927,106 @@ with passion and delivered with care.
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-   
-   
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const observer = new IntersectionObserver(entries => {
+        //         entries.forEach(entry => {
+        //             if (entry.isIntersecting) {
+        //                 entry.target.classList.add('animate');
+        //             }
+        //         });
+        //     }, {
+        //         threshold: 0.5 // Adjust if needed, dictates how much of an element must be in view to trigger
+        //     });
+
+        //     // Target elements with the class 'section' for the animation
+        //     document.querySelectorAll('section').forEach(section => {
+        //         observer.observe(section);
+        //     });
+        // });
+
+    </script>
+    <script>
+        // $(document).ready(function () {
+        //     const images = $('.image-container img');
+        //     let currentIndex = 0;
+        //     let animationInterval = setInterval(revealImage, 2000); // Set the interval
+
+        //     function revealImage() {
+        //         if (currentIndex >= images.length - 1) { // Check if the last image is already displayed
+        //             clearInterval(animationInterval); // Stop the interval
+        //             return; // Exit the function
+        //         }
+        //         const nextIndex = (currentIndex + 1) % images.length;
+        //         images.eq(nextIndex).css('z-index', currentIndex + 2).css('opacity', 1); // Fade in the next image with incrementing z-index
+        //         currentIndex = nextIndex;
+        //     }
+        // });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     var swiper = new Swiper(".mySwiper", {
+        //         slidesPerView: 1,
+        //         spaceBetween: 30,
+        //         pagination: {
+        //             el: ".swiper-pagination",
+        //             clickable: true,
+        //         },
+        //         breakpoints: {
+        //             // when window width is <= 640px
+        //             640: {
+        //                 slidesPerView: 3,
+        //                 spaceBetween: 20
+        //             }
+        //         }
+        //     });
+        // });
+    </script>
+    <script>
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const typingTextElement = document.querySelector('.typing-text');
+        //     const texts = JSON.parse(typingTextElement.getAttribute('data-texts'));
+        //     let index = 0;
+        //     let textIndex = 0;
+        //     let text = texts[textIndex];
+
+        //     function type() {
+        //         if (index < text.length) {
+        //             typingTextElement.textContent += text.charAt(index);
+        //             index++;
+        //             setTimeout(type, 100); // Adjust typing speed here (in milliseconds)
+        //         } else {
+        //             // Call the callback function once typing is complete
+        //             typingComplete();
+        //         }
+        //     }
+
+        //     function typingComplete() {
+        //         // Add your code to execute after typing is complete
+        //         setTimeout(erase, 1000); // Delay before erasing
+        //     }
+
+        //     function erase() {
+        //         if (index > 0) {
+        //             typingTextElement.textContent = text.substring(0, index - 1);
+        //             index--;
+        //             setTimeout(erase, 50); // Adjust erasing speed here (in milliseconds)
+        //         } else {
+        //             textIndex++;
+        //             if (textIndex >= texts.length) textIndex = 0;
+        //             text = texts[textIndex];
+        //             setTimeout(type, 1000); // Delay before typing the next text
+        //         }
+        //     }
+
+        //     type();
+        // });
+
+    </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
@@ -884,7 +1056,47 @@ with passion and delivered with care.
 });
 
     </script>
-   
+    <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     const sections = document.querySelectorAll('.container'); // Make sure elements have 'section' class
 
+        //     const observer = new IntersectionObserver(entries => {
+        //         entries.forEach(entry => {
+        //             if (entry.isIntersecting) {
+        //                 entry.target.classList.add('fadeInLeft');
+        //             } else {
+        //                 entry.target.classList.remove('fadeInLeft');
+        //             }
+        //         });
+        //     }, {
+        //         threshold: 0.5 // Trigger when half of the element is in view
+        //     });
+
+        //     sections.forEach(section => {
+        //         observer.observe(section);
+        //     });
+        // });
+
+    </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
 </html>
 
