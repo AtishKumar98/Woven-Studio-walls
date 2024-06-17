@@ -340,30 +340,6 @@ width: 100%;  margin: 2%;
 width: 50%;display: flex;flex-direction: row;justify-content: flex-end;align-items: center; 
 }
 
-/* Swiper */
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  /* background: #5097B3; */
-  display: flex;
-  padding: 4%;
-  /* height: 50vh; */
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  /* height: 30vh; */
-  object-fit: cover;
-  filter: drop-shadow(10px 10px #94BBCC);
-}
-
 
 
 
