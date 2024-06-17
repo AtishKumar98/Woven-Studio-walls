@@ -699,6 +699,9 @@ width: 80%;
 padding: 5%;
 }
 .product-image-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   width: 40%;
 }
 .product-image-content img{
